@@ -28,7 +28,7 @@ package "Host game app" {
   [Laravel Controllers]
 }
 
-package "javleds/laravel-turn-engine" {
+package "javleds/laravel-game-engine" {
   [Rooms]
   [Players]
   [Chat]
@@ -89,7 +89,7 @@ For local development with a sibling checkout:
     }
   ],
   "require": {
-    "javleds/laravel-turn-engine": "dev-main"
+    "javleds/laravel-game-engine": "dev-main"
   }
 }
 ```
@@ -97,7 +97,7 @@ For local development with a sibling checkout:
 Then run:
 
 ```bash
-composer update javleds/laravel-turn-engine --with-dependencies
+composer update javleds/laravel-game-engine --with-dependencies
 php artisan migrate
 ```
 

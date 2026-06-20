@@ -15,7 +15,7 @@ Repositorios oficiales:
 
 ## Relacion Backend / Frontend
 
-`javleds/laravel-turn-engine` es la mitad backend del motor. `@javleds/vue-turn-engine` es la mitad frontend. El backend mantiene el estado autoritativo y publica eventos realtime; el frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha cambios por canal de sala.
+`javleds/laravel-game-engine` es la mitad backend del motor. `@javleds/vue-turn-engine` es la mitad frontend. El backend mantiene el estado autoritativo y publica eventos realtime; el frontend consume endpoints HTTP, guarda la sesion local del jugador y escucha cambios por canal de sala.
 
 ```plantuml
 @startuml
@@ -27,7 +27,7 @@ package "Aplicacion host" {
   [Vistas del estado]
 }
 
-package "javleds/laravel-turn-engine" {
+package "javleds/laravel-game-engine" {
   [Salas]
   [Jugadores]
   [Chat]
@@ -85,7 +85,7 @@ Para desarrollo con repos hermanos:
     }
   ],
   "require": {
-    "javleds/laravel-turn-engine": "dev-main"
+    "javleds/laravel-game-engine": "dev-main"
   }
 }
 ```
@@ -93,7 +93,7 @@ Para desarrollo con repos hermanos:
 Despues:
 
 ```bash
-composer update javleds/laravel-turn-engine --with-dependencies
+composer update javleds/laravel-game-engine --with-dependencies
 php artisan migrate
 ```
 

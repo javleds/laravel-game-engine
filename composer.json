@@ -1,5 +1,5 @@
 {
-  "name": "javleds/laravel-turn-engine",
+  "name": "javleds/laravel-game-engine",
   "description": "Reusable Laravel backend for online turn-based board games.",
   "type": "library",
   "license": "MIT",
