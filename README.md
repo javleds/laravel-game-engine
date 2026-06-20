@@ -175,7 +175,7 @@ The frontend package must be configured with the host realtime client, usually L
 Before publishing this package publicly:
 
 - Add official repository URLs in this README and `composer.json`.
-- Choose a license and update `composer.json` if needed.
+- Review the MIT license and update it if a different distribution model is required.
 - Tag a semantic version, for example `v0.1.0`.
 - Add CI for PHP syntax, static checks, and package install smoke tests.
 - Add a small example host game or link to one.
@@ -183,3 +183,11 @@ Before publishing this package publicly:
 ## Current Status
 
 This package is extracted and usable as a local Composer path package. It is not tied to the Giants game domain.
+
+## Quality Checks
+
+Run package metadata validation before publishing:
+
+```bash
+composer validate --strict
+```

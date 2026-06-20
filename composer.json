@@ -2,7 +2,7 @@
   "name": "javleds/turn-engine-laravel",
   "description": "Reusable Laravel backend for online turn-based board games.",
   "type": "library",
-  "license": "proprietary",
+  "license": "MIT",
   "keywords": [
     "laravel",
     "board-game",
@@ -32,6 +32,12 @@
         "TurnEngine\\Laravel\\TurnEngineServiceProvider"
       ]
     }
+  },
+  "scripts": {
+    "check": "composer validate --strict"
+  },
+  "config": {
+    "sort-packages": true
   },
   "minimum-stability": "stable",
   "prefer-stable": true
