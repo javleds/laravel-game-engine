@@ -3,6 +3,18 @@
   "description": "Reusable Laravel backend for online turn-based board games.",
   "type": "library",
   "license": "proprietary",
+  "keywords": [
+    "laravel",
+    "board-game",
+    "turn-based",
+    "game-engine",
+    "realtime"
+  ],
+  "authors": [
+    {
+      "name": "Javleds"
+    }
+  ],
   "require": {
     "php": "^8.3",
     "illuminate/support": "^12.0",
