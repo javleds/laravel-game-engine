@@ -8,11 +8,10 @@ La documentacion principal en ingles esta en [README.md](README.md).
 
 ## Enlaces de Repositorio
 
-Estos enlaces se agregaran antes de publicar:
+Repositorios oficiales:
 
-- Paquete backend Laravel: TODO
-- Paquete frontend Vue: TODO
-- Juego host de ejemplo: TODO
+- Paquete backend Laravel: https://github.com/javleds/laravel-game-engine
+- Paquete frontend Vue: https://github.com/javleds/vue-game-engine
 
 ## Relacion Backend / Frontend
 
@@ -135,11 +134,9 @@ La direccion de dependencia debe ser siempre aplicacion host -> contratos del en
 
 ## Checklist Para Publicar
 
-- Agregar URLs oficiales en README y `composer.json`.
 - Revisar la licencia MIT y cambiarla si se requiere otro modelo de distribucion.
 - Crear tag semantico, por ejemplo `v0.1.0`.
 - Agregar CI para checks PHP y prueba de instalacion.
-- Agregar o enlazar un juego host de ejemplo.
 
 ## Checks de Calidad
 

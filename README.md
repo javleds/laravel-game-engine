@@ -8,11 +8,10 @@ Spanish documentation is available in [README.es.md](README.es.md).
 
 ## Repository Links
 
-Official repository links will be added here before publishing:
+Official repositories:
 
-- Laravel backend package: TODO
-- Vue frontend package: TODO
-- Example host game: TODO
+- Laravel backend package: https://github.com/javleds/laravel-game-engine
+- Vue frontend package: https://github.com/javleds/vue-game-engine
 
 ## Package Pair
 
@@ -174,11 +173,9 @@ The frontend package must be configured with the host realtime client, usually L
 
 Before publishing this package publicly:
 
-- Add official repository URLs in this README and `composer.json`.
 - Review the MIT license and update it if a different distribution model is required.
 - Tag a semantic version, for example `v0.1.0`.
 - Add CI for PHP syntax, static checks, and package install smoke tests.
-- Add a small example host game or link to one.
 
 ## Current Status
 
