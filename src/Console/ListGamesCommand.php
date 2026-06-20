@@ -11,7 +11,7 @@ use TurnEngine\Laravel\Rooms\RoomStatus;
 
 final class ListGamesCommand extends Command
 {
-    protected $signature = 'app:games:list
+    protected $signature = 'game-engine:games:list
         {--compact : Hide the player details table}
         {--all-stages : Include every game stage. This is the default behavior}
         {--active-only : Include only games currently being played}';

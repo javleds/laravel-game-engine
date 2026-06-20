@@ -7,7 +7,7 @@ use TurnEngine\Laravel\Maintenance\GamePurgeService;
 
 final class PurgeGameCommand extends Command
 {
-    protected $signature = 'app:games:delete {roomId : Room id to delete}';
+    protected $signature = 'game-engine:games:delete {roomId : Room id to delete}';
 
     protected $description = 'Delete one game room by room id.';
 

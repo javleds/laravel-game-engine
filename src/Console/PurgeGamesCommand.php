@@ -8,7 +8,7 @@ use TurnEngine\Laravel\Maintenance\GamePurgeService;
 
 final class PurgeGamesCommand extends Command
 {
-    protected $signature = 'app:batch:games:delete
+    protected $signature = 'game-engine:batch:games:delete
         {--older-than= : Delete rooms whose last room or game update is older than or equal to this number of days}
         {--all : Delete every room}';
 
