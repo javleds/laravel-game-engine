@@ -15,7 +15,7 @@ Official repositories:
 
 ## Package Pair
 
-This package is the backend half of the engine. It is designed to be used with the Vue client package, `@turn-engine/vue`, but the HTTP and realtime contracts can also be consumed by another frontend.
+This package is the backend half of the engine. It is designed to be used with the Vue client package, `@javleds/vue-turn-engine`, but the HTTP and realtime contracts can also be consumed by another frontend.
 
 ```plantuml
 @startuml
@@ -28,7 +28,7 @@ package "Host game app" {
   [Laravel Controllers]
 }
 
-package "javleds/turn-engine-laravel" {
+package "javleds/laravel-turn-engine" {
   [Rooms]
   [Players]
   [Chat]
@@ -37,7 +37,7 @@ package "javleds/turn-engine-laravel" {
   [Engine Models]
 }
 
-package "@turn-engine/vue" {
+package "@javleds/vue-turn-engine" {
   [Room Repositories]
   [Chat Repositories]
   [Session Store]
@@ -48,7 +48,7 @@ package "@turn-engine/vue" {
 [Game Definition] --> [Command Runner]
 [Game Rules] --> [Command Runner]
 [Command Runner] --> [Realtime Events]
-[@turn-engine/vue] --> [Laravel Controllers]
+[@javleds/vue-turn-engine] --> [Laravel Controllers]
 @enduml
 ```
 
@@ -89,7 +89,7 @@ For local development with a sibling checkout:
     }
   ],
   "require": {
-    "javleds/turn-engine-laravel": "dev-main"
+    "javleds/laravel-turn-engine": "dev-main"
   }
 }
 ```
@@ -97,7 +97,7 @@ For local development with a sibling checkout:
 Then run:
 
 ```bash
-composer update javleds/turn-engine-laravel --with-dependencies
+composer update javleds/laravel-turn-engine --with-dependencies
 php artisan migrate
 ```
 
